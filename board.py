@@ -94,7 +94,7 @@ class Board:
 		screenY = self.boardStart_y + row*self.square_size
 		return (screenX,screenY)
 		
-	def chess_coords(self, position):
+	def board_coords(self, position):
 		(X,Y) = position
 		row = (Y-self.boardStart_y) / self.square_size
 		col = (X-self.boardStart_x) / self.square_size
