@@ -111,7 +111,7 @@ class Board:
 					fromTuple = []
 			if e.type is MOUSEBUTTONDOWN:
 				(mouseX,mouseY) = pygame.mouse.get_pos()
-				squareClicked = self.chess_coords((mouseX,mouseY))
+				squareClicked = self.board_coords((mouseX,mouseY))
 				if squareClicked[0]<0 or squareClicked[0]>self.h or squareClicked[1]<0 or squareClicked[1]>self.w:
 					squareClicked = []
 				if e.button == 3:
